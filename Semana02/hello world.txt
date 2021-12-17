@@ -1,0 +1,36 @@
+// It is not recommended to put function definitions
+// in a header file. Ideally there should be only
+// function declarations. Purpose of this code is
+// to only demonstrate working of header files.
+
+void add(int a, int b)
+{
+	printf("Added value=%d\n", a + b);
+}
+
+void multiply(int a, int b)
+{
+	printf("Multiplied value=%d\n", a * b);
+}
+
+// C program to illustrate file inclusion
+// <> used to import system header file
+#include <stdio.h>
+
+// " " used to import user-defined file
+#include "process.h"
+
+// main function
+int main()
+{
+	// add function defined in process.h
+	add(10, 20);
+
+	// mult function defined in process.h
+	multiply(10, 20);
+
+	// printf defined in stdio.h
+	printf("Process completed");
+	return 0;
+}
+
