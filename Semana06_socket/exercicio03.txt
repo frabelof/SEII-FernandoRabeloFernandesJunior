@@ -1,0 +1,5 @@
+a) No TCP e no UDP podem ser enviados pacotes de até 1500 bytes, devido ao tamanho dos frames Ethernet.
+b) Os arquivos sao fragmentados e enviados por partes/pacotes.
+c) O UDP é mais rápido, mas menos confiável do que o TCP, outro protocolo de transporte comum. Em uma comunicação TCP, os dois computadores começam estabelecendo uma conexão por meio de um processo automatizado denominado ‘handshake’. Somente depois que esse handshake for concluído, um computador realmente transferirá pacotes de dados para o outro.
+As comunicações UDP não passam por esse processo. Em vez disso, um computador pode simplesmente começar a enviar dados para o outro:
+Além disso, as comunicações TCP indicam a ordem em que os pacotes de dados devem ser recebidos e confirmam se os pacotes chegam conforme o planejado. Se um pacote não chegar — por exemplo, devido a congestionamento em redes intermediárias — o TCP exige que ele seja reenviado. As comunicações UDP não incluem nenhuma dessas funcionalidades.
